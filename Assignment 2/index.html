@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gadget Tech Store</h1>
+    </header>
+
+    <div class="container">
+      <main class="products-grid">
+        <h2>Our Products</h2>
+        <div class="products-container">
+          <div
+            class="product-card"
+            data-id="1"
+            data-name="Wireless Headphones"
+            data-price="89.99"
+          >
+            <h3>Wireless Headphones</h3>
+            <p class="price">$89.99</p>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div
+            class="product-card"
+            data-id="2"
+            data-name="Mechanical Keyboard"
+            data-price="129.99"
+          >
+            <h3>Mechanical Keyboard</h3>
+            <p class="price">$129.99</p>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div
+            class="product-card"
+            data-id="3"
+            data-name="Gaming Mouse"
+            data-price="49.99"
+          >
+            <h3>Gaming Mouse</h3>
+            <p class="price">$49.99</p>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div
+            class="product-card"
+            data-id="4"
+            data-name="4K Monitor"
+            data-price="299.99"
+          >
+            <h3>4K Monitor</h3>
+            <p class="price">$299.99</p>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+          <div
+            class="product-card"
+            data-id="5"
+            data-name="Portable SSD (1TB)"
+            data-price="119.99"
+          >
+            <h3>Portable SSD (1TB)</h3>
+            <p class="price">$119.99</p>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </main>
+
+      <aside class="cart-section">
+        <h2 class="cart-section-title">Cart Section</h2>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+          <p class="empty-message">Your cart is empty.</p>
+        </ul>
+        <div class="cart-total">
+          <h3>Total: $<span id="total-price">0.00</span></h3>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

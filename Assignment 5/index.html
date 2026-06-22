@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form Validator</title>
+  </head>
+  <body>
+    <style>
+      .table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .main-heading {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+
+    <h2 class="main-heading">Form Validator</h2>
+    <div class="table">
+      <form id="regForm" onsubmit="return false;" style="max-width: 600px">
+        <table border="1" style="border-collapse: collapse; width: 100%">
+          <thead>
+            <tr>
+              <th style="padding: 8px; width: 25%">Field</th>
+              <th style="padding: 8px; width: 40%">Input</th>
+              <th style="padding: 8px; width: 35%">Live Feedback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 8px"><strong>Username:</strong></td>
+              <td style="padding: 8px">
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="5-15 alphanumeric characters"
+                  style="width: 90%"
+                />
+              </td>
+              <td
+                id="username-feedback"
+                style="padding: 8px; font-size: 0.9rem; color: gray"
+              >
+                Empty.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 8px"><strong>Password:</strong></td>
+              <td style="padding: 8px">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Your password goes here"
+                  style="width: 90%"
+                />
+              </td>
+              <td
+                id="password-feedback"
+                style="padding: 8px; font-size: 0.9rem; color: gray"
+              >
+                Empty.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 8px"><strong>Phone Number:</strong></td>
+              <td style="padding: 8px">
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="+234XXXXXXXXXX"
+                  style="width: 90%"
+                />
+              </td>
+              <td
+                id="phone-feedback"
+                style="padding: 8px; font-size: 0.9rem; color: gray"
+              >
+                Empty.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
